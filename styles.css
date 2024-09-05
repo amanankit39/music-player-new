@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #185b43;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.music-player {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.track-info {
+    margin-bottom: 10px;
+}
+
+#track-title {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#track-artist {
+    color: #666;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.progress-container {
+    margin-top: 10px;
+}
+
+#progress {
+    width: 100%;
+}
